@@ -1,0 +1,40 @@
+.App {
+  text-align: center;
+  .form-container {
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    .form-button {
+      padding: 10px;
+      border-radius: 0.5rem;
+      cursor: pointer;
+    }
+    .input-container {
+      position: relative;
+      .input-name {
+        padding: 1rem;
+        background: #f5f5f5;
+        border: 1px solid black;
+        border-radius: 0.5rem;
+        &.error {
+          border: 1px solid red;
+        }
+      }
+      & .error-text {
+        color: red;
+        position: absolute;
+
+      }
+     }
+  }
+}
+
+@media (max-width: 576px) {  
+   .form-container { 
+  	flex-direction: column;
+  }
+}
+
